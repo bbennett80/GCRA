@@ -1,13 +1,26 @@
 # https://bcrisktool.cancer.gov/about.html
 
-
 import streamlit as st
+import streamlit.components.v1 as components
+
+
+def pedigree_chart():
+    with open('devel/docs/index.html') as p:
+        pedigree = p.read()
+
+    return components.html(pedigree, height=500)
+
 
 st.title('Genetic Cancer Risk Assessment')
 
 #sidebar elements
 model = st.sidebar.selectbox('Risk Model', ('BOADICEA','Tyrer-Cusick', 'Gain', 'Claus', 'General Population', 'BRCAPro'))
 st.subheader(model)
+
+
+# pedigree
+pedigree_chart()
+
 
 def risk_factors():
     """idea from https://github.com/CCGE-BOADICEA/bws"""
