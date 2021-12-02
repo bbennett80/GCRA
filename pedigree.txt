@@ -1,1 +1,0 @@
-[{"name":"m21","display_name":"father","sex":"M","top_level":true,"pancreatic_cancer_diagnosis_age":"64","age":"70","status":"0"},{"name":"f21","display_name":"mother","sex":"F","top_level":true,"breast_cancer_diagnosis_age":"55","age":"68"},{"name":"ch1","display_name":"me","sex":"F","mother":"f21","father":"m21","proband":true}]
