@@ -20,7 +20,7 @@ def parity():
     return st.sidebar.slider('Number of Children', min_value=0, max_value=20, step=1)
 
 def age_first_live_birth():
-     return st.sidebar.slider('Age at First Live Birth', 16, 50, 1)
+     return st.sidebar.slider('Age at First Live Birth', min_value=16, max_value=50, step=1)
 
 def oral_contraceptive_use():
     return st.sidebar.selectbox('Have you used oral birth control?', ('No', 'Yes'), help='This refers to birth control pill')
