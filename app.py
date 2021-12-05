@@ -9,7 +9,6 @@ import risk_factors as risk
 
 st.title('Genetic Cancer Risk Assessment')
 
-
 # pedigree
 def draw_pedigree_chart():
     with open('./src/index.html') as p:
