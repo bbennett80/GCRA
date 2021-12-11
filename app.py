@@ -11,10 +11,13 @@ st.title('Genetic Cancer Risk Assessment')
 
 # pedigree
 def draw_pedigree_chart():
-    with open('./pedigree/pedigree/index.html') as p:
-        pedigree = p.read()
-
-    return components.html(pedigree, height=500)
+    st.warning('''
+            Create a pedigree, save it to your computer,
+            upload it in the sidebar to caluclate
+            the risk models.
+            ''')
+    src = 'https://pedigree.surge.sh/'
+    return components.iframe(src, width=850, height=800, scrolling=True)
 
 
 # sidebar elements

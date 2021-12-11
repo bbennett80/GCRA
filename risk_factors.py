@@ -11,7 +11,7 @@ def pedigree_have_need():
     return st.sidebar.selectbox('Pedigree options', ('Choose an option', 'Create new pedigree', 'Upload pedigree'))
 
 def upload_pedigree():
-     return st.sidebar.file_uploader('Upload Pedigree', type=['PED', 'LINKAGE', 'GEDCOM', 'BOADICEA'])
+     return st.sidebar.file_uploader('Upload Pedigree', type=['PED', 'CanRisk', 'BOADICEA'])
 
 def menarche_age():
     return st.sidebar.slider('Age of First Menstruation', min_value=0, max_value=45, step=1, value=14, help='use "0" if never had period')
