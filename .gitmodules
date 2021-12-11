@@ -1,0 +1,4 @@
+[submodule "pedigree"]
+    path = pedigree
+    url = https://github.com/bbennett80/pedigree.git
+    branch = split-file
