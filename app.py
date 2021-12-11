@@ -11,7 +11,7 @@ st.title('Genetic Cancer Risk Assessment')
 
 # pedigree
 def draw_pedigree_chart():
-    with open('./src/index.html') as p:
+    with open('./pedigree/pedigree/index.html') as p:
         pedigree = p.read()
 
     return components.html(pedigree, height=500)
