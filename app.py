@@ -14,9 +14,10 @@ def draw_pedigree_chart():
     st.warning('''
             Create a pedigree, save it to your computer,
             upload it in the sidebar to caluclate
-            the risk models.
+            the risk models. Or click [The Pedigree Project](https://pedigree.surge.sh/).
             ''')
     src = 'https://pedigree.surge.sh/'
+
     return components.iframe(src, width=850, height=800, scrolling=True)
 
 
@@ -93,5 +94,4 @@ def tyrer_cusick(age, height, weight, menarche_age, parity, age_menopause, hrt,
 def BOADICEA():
     """https://www.nature.com/articles/6602175.pdf"""
     pass
-
 
